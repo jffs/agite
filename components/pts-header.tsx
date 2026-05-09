@@ -1,21 +1,19 @@
 export function PTSHeader() {
   return (
-    <header className="w-full py-6 px-4 border-b border-border">
+    <header className="w-full py-4 px-4 border-b border-border">
       <div className="max-w-4xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <span className="text-primary font-bold text-xl tracking-tight">PTS</span>
-          <span className="hidden sm:inline text-muted-foreground text-sm">
-            Partido de los Trabajadores Socialistas
-          </span>
+        <img 
+          src="/JuvPTS.svg" 
+          alt="Logo Juventud PTS" 
+          className="h-10 sm:h-12 w-auto object-contain" 
+        />          
         </div>
-        <a 
-          href="https://www.pts.org.ar" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-        >
-          pts.org.ar
-        </a>
+        <img 
+          src="/EnCodigoRojo-icono1.svg" 
+          alt="Logo En Código Rojo" 
+          className="h-10 sm:h-12 w-auto object-contain" 
+        />              
       </div>
     </header>
   )
