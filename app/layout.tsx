@@ -1,33 +1,34 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { kuunari } from './fonts'
 import './globals.css'
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-sans"
-});
+  variable: "--font-inter",
+})
 
 export const metadata: Metadata = {
-  title: '¡NO AL AJUSTE UNIVERSITARIO! | PTS',
-  description: 'Llevamos días sin cumplimiento de la ley. El ajuste nos roba el futuro.',
+  title: '¡NO AL AJUSTE UNIVERSITARIO!',
+  description: 'Llevamos días sin cumplimiento de la Ley de Financiamiento Universitario. El ajuste nos roba el futuro.',
   generator: 'v0.app',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/EnCodigoRojo-icono1.svg',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/EnCodigoRojo-icono1.svg',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/icon.svg',
+        url: '/EnCodigoRojo-icono1.svg',
         type: 'image/svg+xml',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/EnCodigoRojo-icono1.svg',
   },
 }
 
@@ -38,7 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className="bg-background">
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${kuunari.variable} ${inter.variable} font-sans antialiased`}>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>

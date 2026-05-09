@@ -40,7 +40,7 @@ function FlipDigit({ value, size = "small" }: { value: string; size?: "large" | 
       className={cn(
         "relative overflow-hidden bg-neutral-900",
         isLarge
-          ? "h-24 w-16 rounded-lg sm:h-36 sm:w-24 md:h-48 md:w-32"
+          ? "h-24 w-16 rounded-lg sm:h-32 sm:w-20 md:h-40 md:w-28"
           : "h-12 w-8 rounded-md sm:h-14 sm:w-10 md:h-16 md:w-12"
       )}
     >
@@ -70,7 +70,7 @@ function FlipDigit({ value, size = "small" }: { value: string; size?: "large" | 
           <span
             className={cn(
               "font-bold text-white tabular-nums",
-              isLarge ? "text-6xl sm:text-8xl md:text-9xl" : "text-2xl sm:text-3xl md:text-4xl"
+              isLarge ? "text-6xl sm:text-7xl md:text-8xl" : "text-2xl sm:text-3xl md:text-4xl"
             )}
           >
             {displayValue}
@@ -144,7 +144,7 @@ export function FlipClock({ startDate }: { startDate: Date }) {
   if (!mounted) return null
 
   return (
-    <div className="flex flex-col items-center py-6 sm:py-8">
+    <div className="flex flex-col items-center py-3 sm:py-4">
       {/* DÍAS - Prominente en el centro */}
       <motion.div
         className="flex flex-col items-center"
@@ -153,13 +153,13 @@ export function FlipClock({ startDate }: { startDate: Date }) {
         transition={{ duration: 0.4 }}
       >
         <DigitGroup value={time.days} padLength={3} size="large" />
-        <span className="mt-3 text-sm font-semibold tracking-widest text-neutral-600 uppercase sm:mt-4 sm:text-base md:text-lg">
+        <span className="mt-2 text-sm font-semibold tracking-widest text-neutral-600 uppercase sm:mt-3 sm:text-base md:text-lg">
           Días sin cumplir con la ley
         </span>
       </motion.div>
 
       {/* Separador visual */}
-      <div className="my-6 h-px w-16 bg-neutral-200 sm:my-8 sm:w-24" />
+      <div className="my-3 h-px w-16 bg-neutral-200 sm:my-4 sm:w-24" />
 
       {/* Horas : Minutos : Segundos - Más pequeño */}
       <motion.div
