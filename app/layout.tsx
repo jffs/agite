@@ -30,6 +30,29 @@ export const metadata: Metadata = {
     ],
     apple: '/EnCodigoRojo-icono1.svg',
   },
+  openGraph: {
+    title: 'Cronómetro de la Impunidad',
+    description: 'Llevamos más de 200 días sin presupuesto universitario. ¡Sumate al reclamo!',
+    url: 'https://milei-cumpli-la-ley.vercel.app',
+    siteName: 'Juventud PTS - En Código Rojo',
+    images: [
+      {
+        url: '/og-card.png', // Subí tu captura de pantalla a /public con este nombre
+        width: 1196,
+        height: 526,
+        alt: 'Cronómetro de la Impunidad - Juventud PTS',
+      },
+    ],
+    locale: 'es_AR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Cronómetro de la Impunidad',
+    description: 'Milei sigue sin aplicar la Ley de Financiamiento Universitario. ¡Entrá y hacé ruido!',
+    images: ['/og-card.png'], // Misma imagen para X
+    creator: '@alt_izq', // O la cuenta oficial que prefieras
+  },
 }
 
 export default function RootLayout({

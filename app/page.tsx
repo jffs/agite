@@ -8,7 +8,7 @@ import { FormButton } from "@/components/form-button"
 import { SloganText } from "@/components/slogan-text"
 
 // Ley de Financiamiento Universitario - 2 octubre 2025
-const START_DATE = new Date("2025-10-02T00:00:00")
+const START_DATE = new Date("2025-10-21T00:00:00")
 
 export default function Home() {
   const days = useDaysSince(START_DATE)
@@ -35,11 +35,21 @@ export default function Home() {
           </div>
         </section>
 
-        {/* RELOJ */}
-        <section className="py-1 sm:py-2 w-full max-w-4xl">
-          <FlipClock startDate={START_DATE} />
-          </section>
-
+        <section 
+  className="w-full py-16 px-4 bg-white border-y-4 border-black"
+  style={{
+    backgroundImage: `url('/fondo-pub.png')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundBlendMode: 'multiply', // Sutiliza el fondo contra el blanco
+    backgroundColor: 'rgba(255,255,255,0.9)', // Lo hace casi marca de agua
+  }}
+>
+  <div className="max-w-4xl mx-auto flex flex-col items-center">
+  <FlipClock startDate={START_DATE} />
+  </div>
+</section>
+       
         {/* BOTON CTA */}
         <section className="py-8 px-4 w-full max-w-3xl flex flex-col sm:flex-row gap-4 justify-center">
           <div className="flex-1 max-w-md">
@@ -65,17 +75,24 @@ export default function Home() {
             </div>
             <div className="border-4 border-black bg-white shadow-[12px_12px_0px_0px_rgba(220,38,38,1)] overflow-hidden">
               <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLSeafhOoCOxyO0Cvn9LYZX0hcKvfSuSxRyOPXwSg5UGmaK6Snw/viewform?embedded=true"
+                src="https://docs.google.com/forms/d/e/1FAIpQLSc0HJ87fZjmNhf_gvguYvNpIygJP5GnbA0LW9DfJcaZi91LLg/viewform?embedded=true"
                 width="100%"
                 height="1000" // Aumentado para evitar scroll interno molesto
                 className="w-full border-none"
               >
                 Cargando…
               </iframe>
-            </div>            
+            </div>  
+                      
           </div>
+          <div className="w-full max-w-[300px] sm:max-w-[400px] py-20 transition-transform hover:scale-105 duration-500">
+      <img 
+        src="/secretaria.png" 
+        alt="Secretaria de coordinacion - FULP" 
+        className="w-full h-auto"
+      />
+    </div>
         </section>
-
       </main>
     
     </div>
