@@ -153,7 +153,7 @@ export function FlipClock({ startDate }: { startDate: Date }) {
         transition={{ duration: 0.4 }}
       >
         <DigitGroup value={time.days} padLength={3} size="large" />
-        <span className="mt-2 text-sm font-semibold tracking-widest text-neutral-600 uppercase sm:mt-3 sm:text-base md:text-lg">
+        <span className="mt-2 text-sm font-semibold tracking-widest text-white uppercase sm:mt-3 sm:text-base md:text-lg">
           Días sin cumplir con la ley
         </span>
       </motion.div>
@@ -170,7 +170,7 @@ export function FlipClock({ startDate }: { startDate: Date }) {
       >
         <div className="flex flex-col items-center">
           <DigitGroup value={time.hours} size="small" />
-          <span className="mt-1.5 text-[10px] font-medium tracking-wider text-neutral-500 uppercase sm:mt-2 sm:text-xs">
+          <span className="mt-1.5 text-[10px] font-medium tracking-wider text-white uppercase sm:mt-2 sm:text-xs">
             Horas
           </span>
         </div>
@@ -179,7 +179,7 @@ export function FlipClock({ startDate }: { startDate: Date }) {
 
         <div className="flex flex-col items-center">
           <DigitGroup value={time.minutes} size="small" />
-          <span className="mt-1.5 text-[10px] font-medium tracking-wider text-neutral-500 uppercase sm:mt-2 sm:text-xs">
+          <span className="mt-1.5 text-[10px] font-medium tracking-wider text-white uppercase sm:mt-2 sm:text-xs">
             Min
           </span>
         </div>
@@ -188,7 +188,7 @@ export function FlipClock({ startDate }: { startDate: Date }) {
 
         <div className="flex flex-col items-center">
           <DigitGroup value={time.seconds} size="small" />
-          <span className="mt-1.5 text-[10px] font-medium tracking-wider text-neutral-500 uppercase sm:mt-2 sm:text-xs">
+          <span className="mt-1.5 text-[10px] font-medium tracking-wider text-white uppercase sm:mt-2 sm:text-xs">
             Seg
           </span>
         </div>
