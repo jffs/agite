@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Cronómetro de la Impunidad',
     description: 'Llevamos más de 200 días sin presupuesto universitario. ¡Sumate al reclamo!',
-    url: 'https://milei-cumpli-la-ley.vercel.app',
+    url: 'https://contador-ajuste-universitario.vercel.app/',
     siteName: 'Juventud PTS - En Código Rojo',
     images: [
       {
