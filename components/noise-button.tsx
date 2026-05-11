@@ -20,7 +20,7 @@ export function NoiseButton({ days }: NoiseButtonProps) {
         "@JMilei @madorni El Congreso rechazó el veto: cumplan la ley y financien ya la universidad pública.",
         "",
         "Entrá acá y sumate al reclamo:",
-        "https://milei-cumpli-la-ley.vercel.app/",
+        "https://contador-ajuste-universitario.vercel.app/",
         "",
         "#NoAlAjusteUniversitario",
       ].join("\n")
